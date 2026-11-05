@@ -1,0 +1,16 @@
+AI Studio 1.0 / 2.6 Source-Available License
+Noncommercial Use and Distribution Only
+
+This license does not replace a review of third-party licenses.
+
+You may obtain, read, study, modify, and share the project's own source code and modifications for noncommercial purposes under these same noncommercial terms, provided that this license and applicable copyright notices are retained.
+
+Commercial use of the software or its source code is prohibited without separate written authorization from the rights holder. Without such authorization, you may not sell or rent the software or modified versions, provide the software or source code as part of commercial software, a commercial product, or a paid software service, or charge others for the software or its source code.
+
+As an express exception, users may use the software to create and sell their own works to which they hold lawful rights. Users retain their rights in their inputs and in works they create or lawfully own; using this software does not transfer those rights. Project-owned templates, verification scripts and helper text that the software copies, generates or makes available for use in a user's work may be used, modified, distributed and commercially exploited as part of that work. This exception includes client/templates/project.godot, acceptance.gd, blender_safe_ripple.py and blender_pack_existing_frames.py. It does not permit selling those templates separately or commercially using the software itself or its other source code. Third-party materials remain subject to their own rights holders' terms.
+
+This license applies only to project-owned content that the project rights holder is entitled to license. It does not change the separate licenses or terms of third-party tools, components, fonts, models, or services, or grant additional rights to third-party content.
+
+The project is provided as is. To the extent permitted by applicable law, there is no guarantee that the software is error-free, suitable for a particular purpose, or that external services will remain available. Rights that applicable law does not permit to be excluded are unaffected.
+
+A license that makes source code available while restricting commercial use does not meet the Open Source Initiative's definition of an open source license. Describe this project as source-available for noncommercial use and distribution. Commercial use of the software or source code requires separate authorization from the rights holder. The planned AI Studio 4.0 commercial full version is intended to provide the program; purchasing it does not automatically grant access to its source code or commercial rights to other versions.

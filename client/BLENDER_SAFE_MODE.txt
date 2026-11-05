@@ -1,0 +1,5 @@
+Blender MCP安全模式必须保持启用。模型默认导引见studio_tool_contracts.py：bpy/math等实际允许API，禁止numpy/hashlib/DataTexts/open/os。文件JSON和SHA证据用原生文件工具，宿主独立重算SHA，不伪造。
+可编辑3D/动画/曲线/兼容GreasePencil仍支持，fresh-empty扇气参考不限制所有VFX为图片。身份须核对准确当前source.blend、隔离标记及实际bootstrap alias（不是盲用人类流水线ID）。重试按真实checkpoint保留有效工作，不能自动清场。
+测试脚本独立SceneTree CLI退出合同、原验收、正式StructuredOutput、累计预算、商业许可待开放规则均保留。
+
+真实rev1问题：未设置fake_user的零引用图片在内存pack但保存重载丢失。rev2为每图设use_fake_user=True再pack/save；持久化结论必须独立重载并逐图比较原PNG bytes，不以保存ACK或内存统计冒称成功。不得重新绘帧、覆盖游戏或清除原费用。

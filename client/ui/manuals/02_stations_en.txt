@@ -1,0 +1,67 @@
+Use stations
+This source is licensed for non-commercial use only. It comes from a historical commercial candidate; the local controller retains its running limit, which is not a commercial entitlement. Purchases, payments and cross-device licensing are not connected. Pricing and purchase channels for the complete 4.0 application will be announced separately. Users may commercially use or sell their own independently created works; their rights do not transfer to this project. Such use remains subject to third-party rights and service terms.
+1. Which version allows a freely editable station graph?
+1.0: fixed gameplay, assets, integration, and research responsibilities, using the existing logical roles. 2.6: fixed logical roles with multi-member teams and layered budgets. 3.0: freely named stations, repeated tool types, multiple members, and many-to-many links. The free-graph procedures in this guide apply to 3.0.
+A tool type controls capabilities and MCP access; it does not dictate the station’s name. “World setting” and “Dialogue” can both use gameplay / code, while “Weapon ripple” and “UI effects” can both use animation / assets.
+Station-graph illustration. Research returns along the original call; no reverse handoff line is needed.
+2. Add, rename, remove, and edit after pausing
+Open the Free station graph in “New / Edit.” Enter a new station name, select its tool type, and click “＋ Add station.” “Insert recommended example” is another starting point.
+Select a node and set station name, station task, execution timing, and members in its properties. Dragging the title changes layout only.
+Choose eager production to run when required handoff dependencies are ready. Choose on demand to run only after a real call request. An uncalled on-demand station stays dormant; do not invoke it just to make a progress display look complete.
+Use “Remove station” or “Remove member,” then save. Old identities, artifacts, and costs remain available for audit; removing a member does not erase spending.
+Pause and finish stopping a started pipeline before editing it.
+Click “Pause and save,” wait for actual PAUSED status and worker exit, then edit tasks, stations, links, or budgets. Started member accounts, models, and identities stay fixed. Use a new member ID or clone a new pipeline for a different assistant.
+Renaming and layout changes do not remake finished artifacts. Goal, station task, assignment, handoff requirements, or file-filter changes can invalidate affected stations, callers, downstream results, and QA. Historical costs, attempts, and candidates remain. A budget-only change does not remake every DONE station.
+3. Assign multiple AI members to one station
+Select a station and click “＋ Add AI member.” Choose an actually available provider for each member and specify an explicit assignment and deliverable.
+The first member is the formal curation lead. Helpers first work in separate candidate directories. The lead actually reads available contributions, merges artifacts, records conflicts, and produces the station’s formal output.
+“Required member” sets a dependency requirement. An optional helper’s failure does not erase others’ work, but it must not be labeled complete. The first curation lead must still complete formal curation even if its required checkbox is cleared.
+Multiple members do not simply edit the same folder at the same time. Isolated candidates, real file handoff, explicit conflicts, and curation are necessary. Curation can involve additional real calls; leave the lead an allowance.
+Example: weapon animation station
+Member 1: deliver the formal animation source, incorporate usable helper advice,
+and provide the actual frame manifest.
+Member 2: check camera framing and transparent edges; submit inspectable
+candidate files and change notes.
+Member 3: check the handoff contract; do not falsely claim to have watched,
+downloaded, or licensed a resource.
+4. Free links: artifact handoff and on-demand calls
+Drag an output connector to the receiver’s input connector, or select output and input in sequence. You can also use the link form to choose source, target, and mode. Select an existing line to edit its contract.
+| Link mode | Direction and trigger | Completion meaning
+| Handoff · solid blue | After the source finishes, actual files are packaged for the receiver. Each edge has its own requirements, filters, and required flag. | A receiver waits for required input. One source can serve multiple targets, each with a separate incoming package.
+| Call · dashed purple | The edge points caller → callee. A concrete research or resource need triggers it, and the result automatically returns to that caller. | Do not add a return edge. One station can serve different callers; each call has a separate identity, workspace, and ledger scope.
+Required handoff dependencies cannot form a cycle; saving such a plan is rejected. Call edges may form a drawn cycle, but a repeated station in the active call chain is stopped, with bounded depth, invocation counts, and budget. Missing optional inputs must be disclosed, not replaced by invented files.
+5. Set requirements and file filters for each link
+Describe what the source should do, which files it must deliver, and how the receiver should inspect them. “Send to the next AI” is not a sufficient handoff contract.
+Example requirements:
+Deliver 18 transparent 256×256 RGBA frames at 30 fps, a manifest,
+and an editable Blender source file.
+The receiver follows manifest order; gameplay code still controls damage
+and cooldown. Record adopted advice, real checks, and missing items.
+Do not present failed or unverified material as passed.
+“Handoff file filters · one relative glob per line” applies to the source station’s actual output directory. When animation output is under art/, use, for example:
+art/frames/*.png
+art/manifest.json
+art/source.blend
+art/HANDOFF.md
+Code usually appears under game/; use game/** or a narrower filter. A blank filter uses the backend’s actual handoff range. Do not use absolute paths, ../, private settings, or another pipeline’s directory. Each edge keeps its own contract, so different consumers can receive different subsets.
+The host generates manifests and hashes from real files. Assistants may record hashes declared in incoming manifests and which advice they adopted. They must not claim to have independently recalculated a hash, downloaded material, watched a video, or obtained a license without doing so.
+6. Pipeline, shared station, and member budgets
+Assistant subscription allowances are not included in the USD budget
+USD on these pages covers API costs recorded in the local ledger only. If a subscription member shows “Station budget unavailable; your subscription allowance applies,” no dollar cap is being configured for that membership. It does not mean zero usage or unlimited usage. Check remaining tokens, rate limits, or time-window allowances in your provider account when the provider does not expose them here.
+This software connects existing AI coding assistants so that they use their own tools and accounts. It does not sell model or API credits. Claude Code using your existing API / gateway can still incur API charges. Desktop handoffs, external programs, and their costs need separate verification; do not relabel them as a subscription allowance.
+| Level | Meaning | Limit to remember
+| Pipeline API total | The cumulative cap shared by all metered API work in this pipeline. | Separate pipelines have separate ledgers; they do not move balances between them. Failed calls still count.
+| Shared API station cap | All paid members at the station share it. | Each member does not receive a second copy of the whole station budget. Curation and repairs also count.
+| Cumulative member cap | The member’s API spending in this pipeline. | A member cap cannot exceed its station cap; a station cap cannot exceed the pipeline total.
+| Subscription / external handoff | The provider controls subscription usage; manually incurred external costs need separate checking. | No member dollar cap is configured for a subscription. Do not relabel a metered API route to bypass accounting.
+Plan for actual API stations and leave room for curation or repair. The sum of station caps does not increase the pipeline total; the total remains a shared ceiling. A reservation is an accounting allocation during execution, not a payment or top-up.
+A genuine shortage of USD allowance can create a budget request. Approving a station / member increase does not automatically incur a charge; explicit resume is still required. Increasing only the pipeline total may leave a member or station blocked. The software checks the applicable limits again and preserves cumulative spending.
+A connection failure, attempt limit, exhausted provider subscription, or unknown cost is not a USD increase request. Reconcile unknown spending from real records; do not enter an invented zero to continue.
+7. Delivery responsibility and the meaning of DONE
+Select an actual graph node as the “Game / software acceptance and delivery station.” It must produce a runnable project, pass real import, startup, and functional checks, and be packaged. Without a selected delivery station, actual graph artifacts can be archived, but game or software functional QA must not be claimed.
+The selected delivery station may use a formally completed base run or an actual call run, with identity and revision matching the current delivery. An accepted terminal does not mean every eager station has finished. Whole-line DONE also requires active eager stations and actually created runs / calls to satisfy completion conditions. Uncalled dormant on-demand stations do not have to run.
+If an independent branch fails, completed terminal files, spending, and QA can be preserved, and later resume continues unfinished work. Only an explicitly eligible non-delivery optional branch may be excluded with a real warning; the failed station itself remains failed rather than being relabeled DONE.
+Based on the actual working source and verification records. Follow the entries shown by your current version. Configuration and free protocol checks do not replace real model-task tests. Publisher display name: AI Studio contributors. Support: Project issue tracker. The display name is not a verified legal company name. This HTML is self-contained offline, without external fonts, tracking, scripts, or remote images. Diagrams are illustrative.
+
+
+Closing only the interface leaves the backend running. Exiting the backend requests pause and save by default; reopening will not automatically resume. Cancel applies to this run only: generated content cannot be recovered, but the pipeline, stations, links and budget configuration remain. Edit and save a new task before explicitly starting. Historical costs, usage and attempts are not refunded or reset.

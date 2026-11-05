@@ -1,0 +1,84 @@
+{
+  "job_id": "demo-001",
+  "goal": "在独立测试工程制作一个可移动、可攻击木桩的2D扇气演示。用简单占位角色验证AI协作，不制作完整人物后空翻。",
+  "game": {
+    "engine": "Godot 4.x standard GDScript",
+    "renderer": "gl_compatibility",
+    "viewport": [
+      640,
+      360
+    ],
+    "main_scene": "res://main.tscn",
+    "movement_speed": 160,
+    "player_start": [
+      220,
+      240
+    ],
+    "enemy_start": [
+      350,
+      240
+    ],
+    "enemy_hp": 100,
+    "damage_per_attack": 10,
+    "attack_cooldown_seconds": 0.6,
+    "controls": {
+      "move_left": "A or Left",
+      "move_right": "D or Right",
+      "attack": "J or Space"
+    },
+    "vfx_policy": "Spawn visual on accepted attack. Damage/cooldown are gameplay-owned, not inferred from art frames.",
+    "story": "用一两句文字交代演武场练习；不打开强制对话，不影响自动测试。",
+    "required_root_methods": [
+      "attack",
+      "get_enemy_hp",
+      "get_effect_spawn_count",
+      "get_effect_sprite_frames"
+    ],
+    "required_direct_children": [
+      "Player",
+      "Enemy"
+    ],
+    "sprite_animation_name": "fan_wave"
+  },
+  "vfx": {
+    "effect_id": "fan_wave_001",
+    "fps": 30,
+    "frame_count": 18,
+    "size": [
+      256,
+      256
+    ],
+    "pivot": [
+      128,
+      128
+    ],
+    "blend_mode": "mix",
+    "source": "source.blend",
+    "frames": [
+      "frames/frame_0001.png",
+      "frames/frame_0002.png",
+      "frames/frame_0003.png",
+      "frames/frame_0004.png",
+      "frames/frame_0005.png",
+      "frames/frame_0006.png",
+      "frames/frame_0007.png",
+      "frames/frame_0008.png",
+      "frames/frame_0009.png",
+      "frames/frame_0010.png",
+      "frames/frame_0011.png",
+      "frames/frame_0012.png",
+      "frames/frame_0013.png",
+      "frames/frame_0014.png",
+      "frames/frame_0015.png",
+      "frames/frame_0016.png",
+      "frames/frame_0017.png",
+      "frames/frame_0018.png"
+    ],
+    "style": "淡粉色、低饱和、清晰但柔和的水波状扇气；2D正交画面，有轻微不规则手绘线条；扩散再消退。透明背景，不要人物。",
+    "alpha": "RGBA PNG; background truly transparent; do not flatten on black or white.",
+    "duration_seconds": 0.6,
+    "loop": false
+  },
+  "reference_policy": "仅在完成当前效果确实缺资料时申请一份汇总资料；不能伪造看过视频；素材来源不明不得直接进游戏。",
+  "delivery": "Godot source project, Blender source, frame manifest, actual machine-test logs, local preview; no online publishing."
+}

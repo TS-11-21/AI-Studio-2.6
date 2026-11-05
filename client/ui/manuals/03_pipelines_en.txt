@@ -1,0 +1,72 @@
+Create and run pipelines
+This source is licensed for non-commercial use only. It comes from a historical commercial candidate; the local controller retains its running limit, which is not a commercial entitlement. Purchases, payments and cross-device licensing are not connected. Pricing and purchase channels for the complete 4.0 application will be announced separately. Users may commercially use or sell their own independently created works; their rights do not transfer to this project. Such use remains subject to third-party rights and service terms.
+1. Start with a small, verifiable task
+For a first run, use “Fan-wave Demo · verification template.” Verify connections, real assets, handoff, and acceptance before working on your original project. A new pipeline uses an isolated directory and does not overwrite your existing game.
+Complete registration and local checks in Connect assistants; use Use stations for a free graph. Creating, saving, or refreshing the panel does not issue model calls.
+Lifecycle illustration. Model calls end while waiting for references or handoff; execution resumes only when inputs and approval are ready.
+2. Create and save through the interface
+In “Pipelines,” click “＋ New pipeline” to open “New / Edit.”
+Enter a pipeline ID: start with a letter or number; use letters, numbers, underscores, and hyphens, up to 64 characters. Example: my-fan-001. Existing directories are not overwritten. A cancelled run keeps its pipeline ID, which is reused after explicitly saving a new task.
+Select a task type: fan-wave verification, custom Godot game, or software (Python / HTML / Node). Write the goal and acceptance criteria.
+Set the total API budget for this pipeline. A prefilled value is not a top-up or cost approval. Provider subscription allowances are separate.
+For 3.0, add stations and members, create handoff / call edges, specify edge requirements and filters, and select a real delivery station. For 1.0 / 2.6, use their fixed logical roles and team forms.
+Check provider, model, assignment, required flags, and all three budget levels. Click “Create pipeline” or “Save pipeline configuration.” No model has been called yet.
+Example goal:
+Create an isolated Godot 2D fan-wave demo with horizontal movement
+and attacks against a wooden dummy.
+Each hit deals 10 damage, with a 0.6-second cooldown; reject repeated
+damage during cooldown.
+Integrate 18 transparent 256×256 RGBA frames at 30 fps; preserve
+the real Blender source and manifest.
+Actually run gameplay, frame-count, and transparency checks; deliver
+openable source and machine logs.
+Do not change the original project or publish online. A full character
+backflip is outside this task.
+Once started, the pipeline uses saved provider, MCP, policy, and task snapshots. Global defaults do not silently replace its executing configuration. Add a new assistant through explicit editing after pause.
+3. Confirm before starting
+Assistant subscription allowances are not included in the USD budget
+USD on these pages covers API costs recorded in the local ledger only. If a subscription member shows “Station budget unavailable; your subscription allowance applies,” no dollar cap is being configured for that membership. It does not mean zero usage or unlimited usage. Check remaining tokens, rate limits, or time-window allowances in your provider account when the provider does not expose them here.
+This software connects existing AI coding assistants so that they use their own tools and accounts. It does not sell model or API credits. Claude Code using your existing API / gateway can still incur API charges. Desktop handoffs, external programs, and their costs need separate verification; do not relabel them as a subscription allowance.
+Select the new pipeline and click “Start pipeline.”
+In “Confirm this pipeline start,” inspect the pipeline ID and every active member’s provider, model, and cumulative cap. Make sure you are not starting an old task.
+Check each metered API member you approve for this run, then confirm that those members may execute within the stated budget and existing invocation limits. If you do not approve them, subscription workers may continue while paid members wait.
+Click “Confirm and start,” then watch actual status and activity. A failed assistant does not cancel independent branches, but downstream work waits for required input.
+Your provider still controls subscription tokens, rates, and usage caps. Per-call stop thresholds, reservations, and CLI cost reports are not a guaranteed hard final provider-bill cap. Actual reported spending after stopping may exceed a reservation and must remain in the ledger; it must not be reset to zero.
+4. Read status without continuously polling a model
+| Status / observation | Meaning | Your action
+| Ready / Running / Curating | A station is ready or an owned invocation is active. | Read the actual member, actions, and logs. Do not repeatedly press Start and create duplicate work.
+| Waiting for dependencies / references | A real handoff package or requested information is missing. | Independent branches can continue. Wait for actual input; do not continually ask a model for progress.
+| Waiting for desktop handoff | A task packet is saved and awaits an assistant’s manual return. | Use that packet’s completion template and identity. Do not mix old revisions.
+| Waiting for connection / approval | The local program, sign-in, or this run’s API approval is not ready. | Fix the relevant connection or explicitly approve it. Resume does not sign in, buy a subscription, or fill a key for you.
+| Waiting for budget | An actual USD allowance shortage has created a request. | Decline or approve it, then explicitly resume. Provider subscription exhaustion is not this kind of request.
+| Budget / attempt stop, or unknown cost | A bounded invocation or cost safety gate was triggered. | Read the real reason and ledger. Do not blindly enlarge limits. Unknown cost needs provider usage records.
+| Failed / Interrupted | A real error occurred or an owned process stopped; progress and costs are kept. | After fixing the connection, retry the failed item or resume the job. Completed members are not all remade.
+| Done | Actual artifacts, current delivery identity, and required machine acceptance conditions are satisfied. | Open delivery and current QA records. Limited functional checks are not a complete product-quality guarantee.
+Automatic QA repair requires the run policy to enable it. It is bounded to at most two repairs, within approved budget and the same provider. It does not refill funds, retry indefinitely, or switch to a paid fallback. A dispatched call without known cost stops further paid work in that pipeline; other lines do not share its cost records.
+5. Pause, edit, resume, and restart
+Click Pause and save. The line first enters PAUSING and stops dispatching new work. Active owned calls receive a grace period; when necessary, only this pipeline’s owned CLI processes are stopped.
+Wait for actual PAUSED status and worker exit, then read the checkpoint. Blender is saved only when its file path, isolation marker, and worker identity are verified. An unverified or unsaved status is not a saved in-memory scene.
+Edit goals, station tasks, assignments, edges, or allowances. Historical artifacts, attempts, and costs remain. Task and contract changes invalidate affected production and downstream QA; names and layout do not.
+Click Resume and check API-member approval again. Applicable DONE results are reused; unfinished work continues. A budget-only change does not remake all completed items.
+With autosave enabled, the current 3.0 runner records state about every 15 seconds. This is metadata and disk-file hash checking, not an unconditional Blender save every 15 seconds. Pause / finishing checkpoints keep the latest five versions; revision history and costs remain separately.
+Closing only the interface leaves the backend running. Exiting the backend requests pause and save by default; reopening will not automatically resume. Cancel applies to this run only: generated content cannot be recovered, but the pipeline, stations, links and budget configuration remain. Edit and save a new task before explicitly starting. Historical costs, usage and attempts are not refunded or reset. Use “Exit backend and pause tasks” and wait for saving and process cleanup. Forcibly ending all processes or a power failure can still interrupt work; unsaved memory is not guaranteed recoverable. Reconcile interrupted paid calls with unknown cost before continuing.
+6. Cancel this run: keep pipeline configuration
+Choose Pause and save if you may need to continue later.
+Select the pipeline and choose “Cancel this run.” The confirmation defaults to No: generated content cannot be recovered; pipeline, station, link and budget configuration are kept. You can pause and edit first. No or closing the dialog removes nothing.
+Cancel only after this run has stopped or finished pausing. Confirmation removes generated content from this run, while retaining the same pipeline ID and station, link and budget configuration. A cancelled shell cannot start or resume directly. Edit and save a new task to return to Ready, then explicitly start and check spending approval. Exported copies and external provider records are not automatically erased.
+Necessary cancellation / spending audit records, used allowance, and trial counters are not reset by canceling. Consumed subscription usage and provider charges are not automatically refunded. If your desktop version has no cancellation entry, do not represent manually deleting a folder as this software workflow.
+Delete the pipeline
+Deleting a pipeline is different from cancelling one run. Select the pipeline on the main page and choose “Delete pipeline”; confirmation defaults to No. Deletion removes its entire configuration and saved content irreversibly. A deleted ID cannot be used again; use a new ID for a new pipeline. Pause first and wait for all task processes to exit. Reconcile unknown costs before deletion. Incurred costs, usage, cumulative attempts and necessary audit records are not refunded or reset. If an older backend has not declared the deletion protocol, the button stays disabled; reopen the software to load the update.
+7. Open delivery and judge the actual result
+For the selected pipeline, use Open product / Play, Open delivery, or View preview. Check the real QA scope, current goal and revision, actual source, and resources instead of relying on an assistant saying “finished.”
+Blender production needs a real source file, manifest, and matching PNGs. In-memory data is not proof that it persists after saving.
+A game / software delivery needs a runnable project and machine checks. Notes or a few images alone do not establish software acceptance.
+In 3.0, accepted terminal results and the other eager stations are recorded separately. A required unfinished branch keeps the line waiting; an untriggered on-demand node can remain dormant.
+An explicitly excluded optional branch must retain a real warning and failure status; do not fabricate DONE.
+Actual verification baseline and its limits
+Three independent fan-wave tests on 2026-10-08 completed with actual Claude production, Blender safe mode, 18 transparent PNGs, 18 images persisted after source reload, editable CURVE sources, Codex integration, and real QA / ZIP delivery. Failure and repair history is retained. This demonstrates the small template route, not every new assistant, every Blender version, complete game quality, or Windows executable export.
+Online sales, payment, and the cross-device account licensing server are not live. Purchase dialogs are previews; they do not place an order or open a license. This guide does not require Microsoft dashboard sign-in, buying new services, or disabling safety settings.
+Based on the actual working source and verification records. Follow the entries shown by your current version. Configuration and free protocol checks do not replace real model-task tests. Publisher display name: AI Studio contributors. Support: Project issue tracker. The display name is not a verified legal company name. This HTML is self-contained offline, without external fonts, tracking, scripts, or remote images. Diagrams are illustrative.
+
+
+Closing only the interface leaves the backend running. Exiting the backend requests pause and save by default; reopening will not automatically resume. Cancel applies to this run only: generated content cannot be recovered, but the pipeline, stations, links and budget configuration remain. Edit and save a new task before explicitly starting. Historical costs, usage and attempts are not refunded or reset.

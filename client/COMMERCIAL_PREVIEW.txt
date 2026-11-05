@@ -1,0 +1,5 @@
+AI Studio 2.6 · 源码使用说明 / Source release information
+
+本源码仅限非商业使用；源自历史商业候选版本，本机控制器仍有运行数量限制，该限制不代表商业授权。购买、支付及跨设备授权服务尚未接通。4.0 完整程序的购买渠道和价格待正式公布。用户可以依法商业使用或销售自己创作的作品，作品权利不因使用本软件而转移；使用仍须符合第三方权利及服务条款。
+
+This source is licensed for non-commercial use only. It comes from a historical commercial candidate; the local controller retains its running limit, which is not a commercial entitlement. Purchases, payments and cross-device licensing are not connected. Pricing and purchase channels for the complete 4.0 application will be announced separately. Users may commercially use or sell their own independently created works; their rights do not transfer to this project. Such use remains subject to third-party rights and service terms.
