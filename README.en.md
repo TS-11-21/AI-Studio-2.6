@@ -8,9 +8,7 @@ Compared with 1.0, version 2.6 adds a list of pipelines with a separate team and
 
 Compared with 2.6, AI Studio 4.0 adds a free-form workstation graph, MCP plugin settings for each AI, production workstations using compatible general-purpose APIs, media uploads and access assignments, and main-AI-assisted planning. Actual capabilities depend on the selected models, tools, and configuration.
 
-The planned AI Studio 4.0 commercial full version is intended to be provided as a program without source code. Purchase and download channels are not yet open. Company website: https://tsstudiohub.com/ — this is the company homepage, not a purchase or download link.
-
-The software has not been formally released, and the 4.0 full version is not yet available for purchase.
+AI Studio 4.0 is planned as a Windows desktop download for a one-time price of US$25. Purchases and downloads are pending. See the [4.0 release preview](https://download.tsstudiohub.com/index.en).
 
 ## Run and configure
 
